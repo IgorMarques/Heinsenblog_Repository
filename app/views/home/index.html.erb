@@ -1,15 +1,12 @@
 <h1>I am the One Who Knocks</h1>
-<p>A blog by <strike>Walter White</strike> Heinsenberg </p>
+<h2>A blog by <strike>Walter White</strike> Heinsenberg </h2>
 
 <% @posts.each do |post| %>
-  <tr>
-    <!--<td><%= post.user %></td>-->
-    <td><%= post.user.email %></td>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+	<h3><%=post.title%></h3>
+	<p>by: <%= post.user.email %></p>
+	<p><%= post.content %></td></p>
+	<p><%= link_to 'Show', post %> | <%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 <% end %>
-</table>
+
+
+
