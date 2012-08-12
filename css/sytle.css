@@ -1,2 +1,9 @@
 body {font-family: "Comic Sans MS";
-	color: green;}
+	color: green}
+
+footer {
+	border-top: 1px solid #000;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
