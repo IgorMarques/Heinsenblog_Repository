@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Heinsenblog</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
+	<head>
+  		<title>Heinsenblog</title>
+  		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  		<link rel="stylesheet" href="/../../../css/style.css"/>
+  		<%= stylesheet_link_tag    "application", :media => "all" %>
+  		<%= javascript_include_tag "application" %>
+  		<%= csrf_meta_tags %>
+	</head>
 
-<body>
+	<body>
+		<div class= "span8">
+			<h1>I am the One Who Knocks</h1>
+			<h2>A blog by <strike>Walter White</strike> Heinsenberg </h2>
+		</div>
+		<div class="offset5 span4">
+			<ul>
+				<li>Login</li>
+				<li>Register</li>
+			</ul>
+		</div>
+		<div class= "span4">
+ 			<p class="notice"><%= notice %></p>
+ 		<!--<p class="alert"><%= alert %></p>-->
+ 		</div>
+		<%= yield %>
+	</body>
 
- <p class="notice"><%= notice %></p>
- <!--<p class="alert"><%= alert %></p>-->
-
-<%= yield %>
-
-</body>
+	<footer>
+		<p>Desenvolvido em 2012 por Igor Marques com o auxílio de Lucas Bibiano.</br> 2012 © 4Soft</p>	
+	</footer>
 </html>
