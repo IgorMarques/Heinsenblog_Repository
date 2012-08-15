@@ -14,10 +14,13 @@
  */
 
 body {font-family: "Helvetica", Arial;
-	color: green}
+	color: #404040;
+	background: url("bg.jpeg");
+}
 
 header{
 	background: url("banner.png");
+	margin: 0; 
 }
 
 header ul li{
@@ -31,10 +34,22 @@ footer {
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
+	background: url("bbtexture.png")repeat-x, repeat-y;
+	position: absolute bottom: 0;
 }
 
 
 
 .container{
+	;
+}
 
+.header{}
+
+.body{
+	background: #576963;
+}
+
+.footer{
+	color:black;
 }
