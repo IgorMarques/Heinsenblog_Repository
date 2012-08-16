@@ -12,15 +12,22 @@
  *= require_self
 
  */
-
+/*{margin: 0;}*/
 body {font-family: "Helvetica", Arial;
-	color: #404040;
-	background: url("bg.jpeg");
+	color: #1C1F1B;
+	min-height: 100%;
+	background: #071f0f;
 }
 
 header{
-	background: url("banner.png");
-	margin: 0; 
+	background: #276920;
+	border-bottom: 3px solid #252E24;
+	color: #1A1F1A;
+}
+
+h1{
+	font-size: 72px;
+	font-family: Impact;
 }
 
 header ul li{
@@ -30,26 +37,84 @@ header ul li{
 }
 
 footer {
-	border-top: 1px solid #000;
-	height: 50px;
+	border-top: 3px solid #252E24;
+	height: 200px;
 	line-height: 50px;
 	text-align: center;
-	background: url("bbtexture.png")repeat-x, repeat-y;
-	position: absolute bottom: 0;
+	color: #1C1F1B;
+	
+
+	background-image: linear-gradient(bottom, rgb(7,31,15) 26%, rgb(30,102,41) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(7,31,15) 26%, rgb(30,102,41) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(7,31,15) 26%, rgb(30,102,41) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(7,31,15) 26%, rgb(30,102,41) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(7,31,15) 26%, rgb(30,102,41) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.26, rgb(7,31,15)),
+		color-stop(1, rgb(30,102,41))
+	);
+
 }
 
+.post{
+	border: 1px solid #6B736B;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #858C84;
+}
 
+.cabecalhopost{
+	background: #A4A8A3;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #828A81;
+}
+
+.conteudopost{
+	background: #A4A8A3;
+	border-radius: 5px;
+	border: 1px solid #828A81;
+	padding: 5px;
+}
+
+.about{
+	border: 1px solid #6B736B;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #858C84;
+}
+
+.inabout{
+	background: #A4A8A3;
+	border-radius: 5px;
+	border: 1px solid #828A81;
+	padding: 5px;
+}
 
 .container{
 	;
 }
 
-.header{}
+.header{
 
-.body{
-	background: #576963;
 }
 
+.superbody{
+	background: #494949;	
+}
+
+.body{
+	background:#737D72;
+	box-shadow: 0 5px 0 5px #414241;
+	padding-top: 10px;
+
+}
 .footer{
 	color:black;
 }

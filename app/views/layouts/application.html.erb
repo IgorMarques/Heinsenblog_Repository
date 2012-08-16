@@ -11,11 +11,14 @@
 	<body>
 		<header>
 			<div class="container header">
-				<div class= "span8">
-					<h1>I am the One Who Knocks</h1>
+				<div class= "span12">
+					<h1>I AM THE ONE WHO KNOCKS</h1>
+				</div>
+
+				<div class="span6">
 					<h2>A blog by <strike>Walter White</strike> Heinsenberg </h2>
 				</div>
-				<div class="offset5 span4">
+				<div class="span5">
 					<% if user_signed_in? %>
 							<ul>
 								<li>Logado como "<%= current_user.email %>"</li>
@@ -35,9 +38,24 @@
 		 	</div>
 	 	</header>	
 
-	 	<div class="container body">
-			<%= yield %>
+	 	<div class="superbody">
+		 	<div class="container body">
+		 		<div class= "span8">
+					<%= yield %>
+				</div>
+
+				<div class= "span2 offset1">
+					<div class="about">
+						<h2>About me</h2>
+						<div class="inabout">
+							<%= image_tag "avatar.png" %>
+							<p>You clearly don't know who you're talking to, so let me clue you in: I am not in danger, Skyler. I am the danger. A guy opens his door and gets shot, and you think that of me? No! I am the one who knocks! </p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
 
 	
 

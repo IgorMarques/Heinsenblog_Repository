@@ -1,10 +1,14 @@
-<div class= "span5">
+<!--<div class= "span5">-->
 	<% @posts.each do |post| %>
-		<h3><%=post.title%></h3>
-		<p>by: <%= post.user.email %></p>
-		<p><%= post.content %></td></p>
-		<p><%= link_to 'Show', post %> | <%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+		<div class= "post">
+			<div class="cabecalhopost">
+				<h3><%=post.title%></h3>
+				<p>by: <%= post.user.email %></p>
+			</div>
+			<p class= "conteudopost"><%= post.content %></td></p>
+			<p><%= link_to 'Show', post %> | <%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+		</div>
 	<% end %>
-</div>
+<!--</div>-->
 
 
