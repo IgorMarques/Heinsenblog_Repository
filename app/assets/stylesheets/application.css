@@ -60,6 +60,12 @@ footer {
 
 }
 
+h2{
+	font-size: 24px;
+}
+h3{ 
+	font-size: 24px;
+}
 .post{
 	border: 1px solid #6B736B;
 	border-radius: 5px;
@@ -80,6 +86,10 @@ footer {
 	border-radius: 5px;
 	border: 1px solid #828A81;
 	padding: 5px;
+}
+
+.body a {
+	color: #35732A;
 }
 
 .about{
@@ -103,6 +113,11 @@ footer {
 
 .header{
 
+}
+.header a{
+	color: #1E3B19;
+	font-size: 15px;
+	height: 58px;
 }
 
 .superbody{
