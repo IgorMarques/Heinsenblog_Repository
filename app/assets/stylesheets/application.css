@@ -30,7 +30,7 @@ h1{
 	font-family: Impact;
 }
 
-header ul li{
+nav ul li{
 	display: inline;
 	list-style: none;
 	margin-left: 10px;
@@ -114,6 +114,19 @@ h3{
 .header{
 
 }
+
+nav{
+	background: #252E24;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+nav a{
+	font-family: Impact;
+	font-size: 24px;
+
+}
+
 .header a{
 	color: #1E3B19;
 	font-size: 15px;

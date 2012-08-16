@@ -11,35 +11,52 @@
 	<body>
 		<header>
 			<div class="container header">
-				<div class= "span12">
-					<h1>I AM THE ONE WHO KNOCKS</h1>
+				<div class="row">
+					<div class= "span12">
+						<h1>I AM THE ONE WHO KNOCKS</h1>
+					</div>
 				</div>
+				<div class="row">
+					<div class="span5">
+						<h2>A blog by <strike>Walter White</strike> Heinsenberg </h2>
+					</div>
+					<div class="span6">
+						<% if user_signed_in? %>
+								<ul>
+									<li>Logado como "<%= current_user.email %>"</li>
+									<li><%= link_to "Sair", destroy_user_session_path, :method => :delete %></li>
+					        	</ul> 	
+					      	<% else %>
 
-				<div class="span5">
-					<h2>A blog by <strike>Walter White</strike> Heinsenberg </h2>
-				</div>
-				<div class="span6">
-					<% if user_signed_in? %>
-							<ul>
-								<li>Logado como "<%= current_user.email %>"</li>
-								<li><%= link_to "Sair", destroy_user_session_path, :method => :delete %></li>
-				        	</ul> 	
-				      	<% else %>
-				      		<ul>
-				      			<li><%= link_to "Login", new_user_session_path %></li>
-				      			<li><%= link_to "Sign up", new_user_registration_path %></li>
-				      		</ul>
-				      	<% end %>
+					      <% end %>
+					</div>
 				</div>
 				<div class= "span12">
 		 			<p class="notice"><%= notice %></p>
 		 		<!--<p class="alert"><%= alert %></p>-->
 		 		</div>
+
 		 	</div>
-	 	</header>	
+		 </header>	
+
+		 <nav>
+		 	<div class="container">
+		 		<div class="row">
+			 		<div class="span12">
+						 <ul>
+						 	<li>
+						 		<%=link_to "New Post", new_post_path %>
+						 	</li>
+					      	<li><%= link_to "Login", new_user_session_path %></li>
+					      	<li><%= link_to "Sign up", new_user_registration_path %></li>
+					     </ul>
+					</div>
+				</div>
+			 </div>
+		</nav>
 
 	 	<div class="superbody">
-		 	<div class="container body">
+		 	<div class="container body">		 		
 		 		<div class= "span8">
 					<%= yield %>
 				</div>
