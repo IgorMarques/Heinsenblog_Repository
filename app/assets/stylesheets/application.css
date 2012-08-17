@@ -25,6 +25,10 @@ header{
 	color: #1A1F1A;
 }
 
+header ul li{
+	list-style: none;
+}
+
 h1{
 	font-size: 72px;
 	font-family: Impact;
@@ -35,6 +39,8 @@ nav ul li{
 	list-style: none;
 	margin-left: 10px;
 }
+
+
 
 footer {
 	border-top: 3px solid #252E24;
